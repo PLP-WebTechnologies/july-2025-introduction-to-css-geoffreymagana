@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced HTML5 Features Demo</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Web Development Resources</h1>
+    </header>
+
+    <section class="intro-section">
+      <h2>CSS Basics & The Box Model</h2>
+      <div class="intro-content">
+        <p class="objective">
+          This page demonstrates the foundational principles of CSS styling and
+          the Box Model concept. Implementing various styling properties to
+          create a visually appealing and well-structured layout.
+        </p>
+
+        <div class="features">
+          <h3>Key Features Implemented:</h3>
+          <ul>
+            <li>
+              <strong>CSS Basics:</strong> Introduction to CSS with basic
+              styling properties
+            </li>
+            <li>
+              <strong>Basic Properties:</strong> Usage of color, font-size,
+              margin, padding, and background properties
+            </li>
+            <li>
+              <strong>Box Model:</strong> Deliberate use of margins, padding,
+              and borders for proper spacing
+            </li>
+            <li>
+              <strong>Clean Code:</strong> Well-organized CSS with clear
+              selectors and consistent styling patterns
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Essential Web Development Tools</h2>
+      <!-- Ordered List Example -->
+      <ol>
+        <li>
+          Code Editors
+          <!-- Nested Unordered List -->
+          <ul>
+            <li>Visual Studio Code</li>
+            <li>Sublime Text</li>
+            <li>Atom</li>
+          </ul>
+        </li>
+        <li>
+          Version Control
+          <ul>
+            <li>Git</li>
+            <li>GitHub</li>
+            <li>GitLab</li>
+          </ul>
+        </li>
+        <li>
+          Browser Developer Tools
+          <ul>
+            <li>Chrome DevTools</li>
+            <li>Firefox Developer Tools</li>
+            <li>Safari Web Inspector</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Popular Frontend Frameworks Comparison</h2>
+      <!-- Table Example -->
+      <table border="1" cellspacing="0" cellpadding="8">
+        <thead>
+          <tr>
+            <th>Framework</th>
+            <th>Language</th>
+            <th>Learning Curve</th>
+            <th>Popular Use Cases</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>React</td>
+            <td>JavaScript</td>
+            <td>Moderate</td>
+            <td>Single Page Applications</td>
+          </tr>
+          <tr>
+            <td>Vue.js</td>
+            <td>JavaScript</td>
+            <td>Easy</td>
+            <td>Progressive Web Apps</td>
+          </tr>
+          <tr>
+            <td>Angular</td>
+            <td>TypeScript</td>
+            <td>Steep</td>
+            <td>Enterprise Applications</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Multimedia Content</h2>
+
+      <article class="gallery-card">
+        <h3>Image Gallery</h3>
+        <figure>
+          <img
+            src="https://images.pexels.com/photos/30829094/pexels-photo-30829094.jpeg"
+            alt="Rush Hour Chaos in Hanoi Streets"
+            width="800"
+            height="600"
+          />
+        </figure>
+      </article>
+
+      <article class="gallery-card">
+        <h3>Video Content</h3>
+        <video width="640" height="360" controls preload="metadata">
+          <source
+            src="https://videos.pexels.com/video-files/32992748/14060888_2560_1440_30fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <p>A sample video demonstrating HTML5 video capabilities</p>
+      </article>
+
+      <article class="gallery-card">
+        <h3>Audio Sample</h3>
+        <audio controls>
+          <source
+            src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+            type="audio/mpeg"
+          />
+        </audio>
+        <p>A sample audio clip demonstrating HTML5 audio capabilities</p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Developer Registration Form</h2>
+      <!-- Form Example with Various Input Types and HTML5 Validation -->
+      <form id="developerForm" autocomplete="on">
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <div class="form-group">
+            <label for="fullname">Full Name:</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              required
+              minlength="3"
+              maxlength="50"
+              placeholder="Enter your full name"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="your.email@example.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              pattern="[0-9]{10}"
+              placeholder="0734567890"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">Date of Birth:</label>
+            <input
+              type="date"
+              id="birthday"
+              name="birthday"
+              required
+              max="2010-01-01"
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Professional Details</legend>
+
+          <div class="form-group">
+            <label for="experience">Years of Experience:</label>
+            <input
+              type="number"
+              id="experience"
+              name="experience"
+              min="0"
+              max="50"
+              step="0.5"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="portfolio">Portfolio URL:</label>
+            <input
+              type="url"
+              id="portfolio"
+              name="portfolio"
+              placeholder="https://yourportfolio.com"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="specialization">Primary Specialization:</label>
+            <select id="specialization" name="specialization" required>
+              <option value="">Select your specialization</option>
+              <option value="frontend">Frontend Development</option>
+              <option value="backend">Backend Development</option>
+              <option value="fullstack">Full Stack Development</option>
+              <option value="mobile">Mobile Development</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Skills:</label>
+            <div>
+              <input type="checkbox" id="html" name="skills" value="html" />
+              <label for="html">HTML5</label>
+
+              <input type="checkbox" id="css" name="skills" value="css" />
+              <label for="css">CSS3</label>
+
+              <input
+                type="checkbox"
+                id="javascript"
+                name="skills"
+                value="javascript"
+              />
+              <label for="javascript">JavaScript</label>
+
+              <input type="checkbox" id="python" name="skills" value="python" />
+              <label for="python">Python</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additional Information</legend>
+
+          <div class="form-group">
+            <label for="bio">Brief Bio:</label>
+            <textarea
+              id="bio"
+              name="bio"
+              rows="4"
+              minlength="50"
+              maxlength="500"
+              placeholder="Tell us about yourself..."
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label>Preferred Work Setup:</label>
+            <div>
+              <input
+                type="radio"
+                id="remote"
+                name="worksetup"
+                value="remote"
+                required
+              />
+              <label for="remote">Remote</label>
+
+              <input type="radio" id="onsite" name="worksetup" value="onsite" />
+              <label for="onsite">On-site</label>
+
+              <input type="radio" id="hybrid" name="worksetup" value="hybrid" />
+              <label for="hybrid">Hybrid</label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form-group">
+          <input type="submit" value="Submit Registration" />
+          <input type="reset" value="Clear Form" />
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      <p>
+        Building upon core HTML concepts, this page showcases
+        <span>advanced HTML5 features</span> including structured
+        <span>lists</span>, organized <span>tables</span>, interactive
+        <span>media elements</span>, and sophisticated
+        <span>form validation</span> - all enhanced with modern CSS styling.
+      </p>
+    </footer>
+  </body>
+</html>
