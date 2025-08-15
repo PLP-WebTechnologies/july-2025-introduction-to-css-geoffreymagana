@@ -41,11 +41,12 @@ section h2 {
 .intro-section {
   background-color: #ffffff;
   text-align: left;
+  
 }
 
 .intro-content {
   max-width: 900px;
-  margin: 0 auto;
+  margin-left: 3rem;
 }
 
 .intro-section .objective {
